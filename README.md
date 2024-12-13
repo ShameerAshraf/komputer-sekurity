@@ -1,4 +1,4 @@
-#Syed Shameer Ashraf, shameer.ashraf@alum.utoronto.ca
+#Syed Shameer Ashraf, shameer.ashraf@alumni.utoronto.ca
 
 target1:
 	char buf[96] is in lab_main, and so has the return address of lab_main closest to it. Writing past buf's end, we overwrite int t as well but it does not matter in this case. Then we overwrite lab_main's return address to point to buf's start where we placed the shellcode after some NOPs. 
